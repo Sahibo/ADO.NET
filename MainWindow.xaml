@@ -1,0 +1,45 @@
+﻿<Window x:Class="BazarApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BazarApp"
+        mc:Ignorable="d"
+        Title="Bazar"
+        Background="#658864"
+        Height="600" Width="600">
+    <StackPanel>
+        <WrapPanel>
+            <ComboBox 
+                Height="30" Width="75"
+                Margin="20" HorizontalAlignment="Left"
+                IsEditable="True"
+                IsReadOnly="True"
+                Text="Table" Foreground="Black" 
+                FontSize="18" FontFamily="SemiBold">
+
+                <ComboBox.Resources>
+                    <SolidColorBrush x:Key="{x:Static SystemColors.ActiveBorderColor}" Color="Yellow" />
+                    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Yellow" />
+                    <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="#658864" />
+                </ComboBox.Resources>
+            </ComboBox>
+
+            <Button 
+                Content="Select"
+                Foreground="Black" FontSize="18"
+                FontFamily="SemiBold"
+                Height="30" Width="70"
+                Margin="10"
+                Background="#B7B78A" 
+            />
+        </WrapPanel>
+
+        <ListBox 
+            Margin="20" 
+            Width="460" Height="470" Background="#B7B78A" >
+
+        </ListBox>
+
+    </StackPanel>
+</Window>
